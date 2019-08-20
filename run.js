@@ -19,8 +19,8 @@ const findpath = (x, y) => {
 		return true; // if it is the goal (exit point)
 	}
 	if (map[y][x] == '+' || map[y][x] == '-') return false;
-	console.log('Im here at: ' + x + ':' + y);
-	
+		console.log('Im here at: ' + x + ':' + y);
+
 	map[y][x] = '+'; //here marking x,y position as part of solution path outlined by "9"
 	if (findpath(x + 1, y)) return true;
 	if (findpath(x, y + 1)) return true;
